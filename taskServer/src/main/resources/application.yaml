@@ -1,0 +1,13 @@
+
+server:
+  port: 8081
+
+spring:
+  application:
+    name: taskServer
+  ai:
+    mcp:
+      server:
+        name: task-mcp-server
+        version: 1.0.0
+        protocol: STREAMABLE
