@@ -1,3 +1,15 @@
 spring:
   application:
     name: taskClient
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+    mcp:
+      client:
+        streamable-http:
+          connections:
+            task-server:
+                url: http://localhost:8081
+
+server:
+  port: 8080
